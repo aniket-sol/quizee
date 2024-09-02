@@ -1,0 +1,379 @@
+/* The overlay for the modal */
+.quiz-builder-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  /* Ensure it appears above other content */
+}
+
+/* The modal itself */
+.quiz-builder-modal {
+  background: white;
+  padding: 20px;
+  width: 40%;
+  max-width: 600px;
+  position: relative;
+  height: 20%;
+  padding: 100px;
+  border-radius: 5px;
+}
+
+/* Styles for the quiz builder content */
+.quiz-builder {
+  position: relative;
+}
+
+.quiz-name-type input {
+  width: 100%;
+  height: 60px;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 37.5px;
+  color: #9F9F9F;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  padding-left: 15px;
+}
+
+
+.quiz-type {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 60px;
+  color: #9F9F9F;
+}
+
+
+.quiz-type-button {
+  margin-top: 14px;
+  width: 120px;
+  height: 40px;
+  background: white;
+  border: none;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 10px;
+  text-align: center;
+  color: #9F9F9F;
+  border-radius: 5px;
+}
+
+
+.action-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.cancel-button,
+.continue-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  width: 220px;
+  color: black;
+  background: white;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-type-button.selected {
+  background: #60B84B;
+  color: white;
+  /* White text */
+}
+
+.cancel-button:hover {
+  background: #60B84B;
+  color: white;
+  /* White text */
+}
+
+.continue-button:hover {
+  background: #60B84B;
+  color: white;
+  /* White text */
+}
+
+
+/* Additional style for the second modal ------------------------------------------------------*/
+
+
+
+.quiz-builder-modal-step-2 {
+  width: 50%;
+  /* Increase the width for the second step */
+  max-width: 800px;
+  /* Change the max-width as needed */
+  padding: 60px;
+  /* Add more padding if needed */
+  height: 60%;
+  border-radius: 5px;
+}
+
+
+/* For the circle representing the question number */
+.question-item span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 50px;
+  margin-right: 10px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  color: #9F9F9F;
+
+}
+
+/* Ensuring that questions are displayed inline */
+.question-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  /* Adds some space between questions */
+}
+
+.question-item {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.add-question-button {
+  width: 42px;
+  height: 42px;
+  opacity: 0px;
+  background-color: transparent;
+  align-items: center;
+  font-size: 50px;
+  margin-bottom: 10px;
+  border: none;
+  color: #969696;
+  margin-right: 10px;
+}
+
+/* The circle for the question number */
+
+
+/* Align the questions and the max 5 text to the right */
+.question-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.questions-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Max 5 questions text should stick to the right */
+.max-questions-text {
+  margin-left: auto;
+  font-weight: bold;
+  color: #9F9F9F;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+
+}
+
+.question-item button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  right: 17px;
+  bottom: 9px;
+}
+
+.poll-question-field input {
+  width: 100%;
+  height: 35px;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  font-family: Poppins;
+  font-size: 18px;
+  line-height: 30px;
+  color: #9F9F9F;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.option-type {
+  display: flex;
+  justify-content: space-between;
+  font-family: Poppins;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #9F9F9F;
+  font-weight: 500;
+}
+
+.option-type-label {
+  margin-top: 18px;
+}
+
+.option-type p {
+  line-height: 50px;
+}
+/* Hide the default radio button */
+.radio-button {
+  opacity: 0;
+  position: absolute;
+}
+
+/* Style the custom radio button */
+.custom-radio-button {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  /* Black color for the radio button */
+  border-radius: 50%;
+  border: 2px solid #000;
+  /* Black border */
+  cursor: pointer;
+}
+
+.custom-radio-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  /* White color for the inner circle */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+/* Show the inner circle when radio is checked */
+.radio-button:checked+.custom-radio-button::before {
+  opacity: 1;
+}
+
+.options_style {
+  width: 30%;
+  height: 30px;
+  margin: 7px;
+  padding: 5px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #9F9F9F;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+}
+
+.delete-option-button {
+  background: transparent;
+  border: none;
+}
+
+.add-option-button {
+  width: 40%;
+  margin: 15px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 31.5px;
+  color: #9F9F9F;
+
+}
+
+.timer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 95px;
+  height: 183px;
+  left: 600px;
+  gap: 0px;
+  border-radius: 10px 0px 0px 0px;
+  opacity: 0px;
+  margin-top: 250px;
+}
+
+.timer p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  color: #9F9F9F;
+}
+
+.timer button {
+  padding: 5px;
+  height: 30px;
+  width: 100px;
+  margin-bottom: 15px;
+  color: #9F9F9F;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timer-button.selected {
+  background-color: #D60000;
+  /* Red background when selected */
+  color: white;
+  /* White text when selected */
+}
+
+.timer-button:hover {
+  cursor: pointer;
+}
+
+
+/* Q&A radio button options */

@@ -1,0 +1,175 @@
+.main-content {
+    flex-grow: 1;
+    padding: 60px;
+    background-color: #f9f9f9;
+}
+
+.metrics {
+    display: flex;
+    /* Allow the metric boxes to wrap to the next line if space is insufficient */
+    gap: 25px;
+}
+
+.metric-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    /* Adjust this width as needed */
+    height: 130px;
+    gap: 20px;
+    flex: 1;
+}
+
+.metric-box h2 {
+    font-family: Poppins;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 45px;
+    margin: 0;
+    flex-shrink: 0;
+    /* Prevent the h2 from shrinking */
+    padding: 10px;
+}
+
+.metric-box p {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+    /* Allow the paragraph to take the remaining space */
+    white-space: nowrap;
+    /* Prevent text from wrapping within the paragraph */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.metric-box span {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 10px;
+    text-align: left;
+
+}
+
+.metric-box.orange h2,
+.orange p {
+    color: #FF5D01;
+}
+
+.metric-box.green h2,
+.green p {
+    color: #60B84B;
+}
+
+.metric-box.blue h2,
+.blue p {
+    color: #5076FF;
+}
+
+.trending-quizzes {
+    margin-top: 40px;
+}
+
+.trending-quizzes h2 {
+    margin-bottom: 20px;
+}
+
+.quiz-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Creates 4 equal columns */
+    grid-auto-rows: 1fr;
+    /* Ensures all rows have the same height */
+    gap: 20px;
+    /* Space between grid items */
+}
+
+.quiz-item {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+    width: 160px;
+}
+
+.quiz-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    font-family: Poppins;
+}
+
+.trending-quizzes {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.trending-quizzes h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: left;
+    font-family: Poppins;
+    color: #474444;
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 18px;
+}
+
+.quiz-header h3 {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+}
+
+.quiz-header p {
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 22.5px;
+    color: #FF5D01;
+}
+
+.quiz-item .quiz-header img.eye-icon {
+    width: 16px;
+    /* Adjust size as needed */
+    height: 16px;
+    /* Adjust size as needed */
+    margin-left: 5px;
+    /* Adds space between the number and the image */
+    vertical-align: middle;
+    /* Ensures the image aligns with the text */
+}
+
+
+.quiz-footer {
+    /* Keeps footer at the bottom of the quiz item */
+    text-align: left;
+    position: relative;
+    bottom: 50px;
+    font-family: Poppins;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 16.5px;
+    color: #60B84B;
+
+}

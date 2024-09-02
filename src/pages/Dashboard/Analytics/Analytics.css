@@ -1,0 +1,171 @@
+/* Container styling */
+.quiz-analytics {
+    padding: 0 50px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    /* margin: 0 auto; */
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+}
+
+
+.table-container {
+    /* padding: 100px 50px; */
+    margin-top: 50px;
+    max-height: 500px;
+    max-width: 100%;
+    /* Adjust this value as needed */
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border: none;
+}
+
+/* Heading styling */
+.quiz-analytics h1 {
+    margin-top: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #4b56a3;
+    margin-bottom: 30px;
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 75px;
+    color: #5076FF;
+
+}
+
+/* Table styling */
+.quiz-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+}
+
+.quiz-table th {
+    background-color: #5076FF;
+    color: white;
+    position: sticky;
+    top: 0;
+
+}
+
+.quiz-table th,
+.quiz-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table row styling */
+.quiz-analytics-table tr:hover {
+    background-color: #d0d8ff;
+}
+
+.edit-btn,
+.delete-btn,
+.share-btn,
+.analysis-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+/* Question Wise Analysis link styling */
+.analysis-btn {
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+/* Target even <tr> elements within the <tbody> */
+.quiz-table tbody tr:nth-child(even) {
+    background-color: #d0d8ff;
+    /* Background color for even rows */
+    overflow: hidden;
+    /* Ensures content stays within rounded borders */
+}
+
+/* Ensures table layout allows for border-radius */
+.quiz-table {
+    border-spacing: 0 10px;
+    /* Adds vertical space between rows */
+}
+
+.quiz-table tr:nth-child(odd) {
+    border-radius: 15px;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 5px;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    font-family: Poppins;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+    color: #474444;
+
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.confirm-delete-btn,
+.cancel-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 180px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.confirm-delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 5px;
+}
+
+.cancel-btn {
+    background-color: white;
+    border-radius: 5px;
+}

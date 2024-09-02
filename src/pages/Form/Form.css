@@ -1,0 +1,150 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.form-box {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1); 
+    width: 70%;
+    height: 70%;
+    text-align: center;
+}
+
+.form-box h1 {
+    margin-bottom: 20px;
+    font-size: 100px;
+    font-weight: 400;
+    text-align: center;
+    color: #474444;
+    font-family: Jomhuria;
+    line-height: 100px;
+}
+
+.form-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-tabs button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    gap: 10px;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+    color: #474444;
+    font-weight: 200;
+    border-radius: 5px;
+
+}
+
+.form-tabs .active-tab {
+    box-shadow: 0px 0px 10px 5px rgba(5, 35, 156, 0.1); 
+}
+
+.form-group {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    width: 40%;
+    margin-right: 10px;
+    font-size: 14px;
+    text-align: right;
+    color: #474444;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+.form-group input {
+    width: 30%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 7px 7px 0px 0px;
+    border: #F4F4F4;
+    outline: none;
+    background: #F4F4F4;
+    margin: 5px;
+}
+
+.form-group input.error-input {
+    border: red;
+    background-color: #F4F4F4; /* Keeps the background color the same */
+    color: red; /* Displays error message in red */
+}
+
+.form-group input.error-input::placeholder {
+    color: transparent; /* Hides the placeholder when error occurs */
+}
+
+.form-group .error {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    color: red;
+    border: red;
+    font-size: 12px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.submit-button {
+    background: #A9BCFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 100%;
+    color: #474444;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+
+.submit-button {
+    background: #A9BCFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 25%;
+    color: #474444;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    
+}
+
+.submit-button:hover {
+    background-color: #434c9c;
+    color: white;
+}
+
+.submit-button:focus {
+    outline: none;
+}

@@ -1,0 +1,74 @@
+/* SuccessPopup.css */
+
+.success-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Dimmed background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-popup {
+  background-color: #fff;
+  /* White background for the popup */
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+  height: 42%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for depth */
+  padding: 10%;
+}
+
+.success-popup p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+  /* Gray color for the paragraph */
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 58.5px;
+  text-align: center;
+
+}
+
+.success-popup button {
+  /* Green color for the button */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-link input {
+  width: 500px;
+  padding: 20px;
+  border: none;
+  background: #EDEDED;
+  border-radius: 5px;
+}
+
+.quiz-link button {
+  margin: 20px;
+  width: 200px;
+  background: #60B84B;
+  color: white;
+}
+
+.close-button {
+  position: relative;
+  left: 350px;
+  bottom: 120px;
+  color: black;
+  background-color: transparent;
+}
+

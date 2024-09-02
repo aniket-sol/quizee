@@ -1,0 +1,107 @@
+/* QuestionAnalytics.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #f9f9f9 !important;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 0 50px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 30px;
+  align-items: left;
+}
+
+.title {
+  color: #5076FF;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: left;
+
+}
+
+.quiz-info {
+  text-align: right;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 22.5px;
+  color: #FF5D01;
+}
+
+.quiz-info p {
+  color: #FF6A3D;
+  font-size: 16px;
+}
+
+.question-container {
+  background: #F5F5F5;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 20px 40px;
+  /* height: 20%; */
+}
+
+.question-title {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Poppins;
+  line-height: 45px;
+  text-align: left;
+
+}
+
+.metrics {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.metric-card {
+  background: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  width: 240px;
+}
+
+.metric-card h4 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4A55A2;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  color: #474444;
+}
+
+.metric-card p {
+  color: #808080;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: left;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background: #4A55A2;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
